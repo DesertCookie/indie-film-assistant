@@ -1,0 +1,36 @@
+*, *::before, *::after { /* Use a more-intuitive box-sizing model. */
+	box-sizing: border-box;
+}
+
+* { /* Remove default margin. */
+	margin: 0;
+}
+
+body { /* Set the body height to 100% even on mobile devices with retracting menus, add accessible line-height and improve text rendering on high-DPI screens. */
+	height: 100vh;
+	height: 100svh;
+	-webkit-font-smoothing: antialiased;
+}
+
+p, h1, h2, h3, h4, h5, h6 { /* Avoid text overflows from words too long for their container and show hyphens on hard wraps. */
+	overflow-wrap: break-word;
+	hyphens: auto;
+	line-height: 1.5;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+
+h1, h2, h3, h4, h5, h6 { /* Reduce line-height for titles and wrap text more beautifully. */
+	line-height: 1.25;
+	text-wrap: balance;
+}
+
+input, button, textarea, select { /* Remove built-in form typography styles that may cause mobile browser to zoom in. */
+	font: inherit;
+}
+
+img, picture, video, canvas, svg { /* Improve media defaults. */
+	display: block;
+	max-width: 100%;
+}

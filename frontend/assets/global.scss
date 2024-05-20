@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+	font-family: Montserrat, "Open Sans";
+}
+
+@layer utilities {
+	.rounded-noleft {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+
+	.rounded-noright {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+	}
+
+	.rounded-none {
+		border-radius: 0;
+	}
+}
